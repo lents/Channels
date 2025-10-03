@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traditional", "Traditional\Traditional.csproj", "{BCC6FC97-A39A-424F-8D6F-F64C45E16954}"
 EndProject
@@ -13,9 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleConsumers", "Multip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleProducers", "MultipleProducers\MultipleProducers.csproj", "{B2C3D4E5-F6A7-890B-CDEF-1234567890AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedChannel", "BoundedChannel\BoundedChannel.csproj", "{C3D4E5F6-A7B8-90BC-DEFG-234567890ABC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundedChannel", "BoundedChannel\BoundedChannel.csproj", "{D5F26FFC-71DC-4B43-9F29-2A5B1E91F947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorld.WebApi", "RealWorld.WebApi\RealWorld.WebApi.csproj", "{D4E5F6A7-B8C9-0DEF-1234-567890ABCDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealWorld.WebApi", "RealWorld.WebApi\RealWorld.WebApi.csproj", "{CBA36B54-9AAD-474C-A5D1-2E1BB26E072D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomChannel.Idea", "CustomChannel.Idea\CustomChannel.Idea.csproj", "{3D64A5E8-79C3-4264-9A24-D2E639CA49B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{60A3DCD6-131E-4C71-B6FA-EAC267CA5B85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +47,22 @@ Global
 		{B2C3D4E5-F6A7-890B-CDEF-1234567890AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2C3D4E5-F6A7-890B-CDEF-1234567890AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2C3D4E5-F6A7-890B-CDEF-1234567890AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3D4E5F6-A7B8-90BC-DEFG-234567890ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3D4E5F6-A7B8-90BC-DEFG-234567890ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3D4E5F6-A7B8-90BC-DEFG-234567890ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3D4E5F6-A7B8-90BC-DEFG-234567890ABC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4E5F6A7-B8C9-0DEF-1234-567890ABCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4E5F6A7-B8C9-0DEF-1234-567890ABCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4E5F6A7-B8C9-0DEF-1234-567890ABCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4E5F6A7-B8C9-0DEF-1234-567890ABCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F26FFC-71DC-4B43-9F29-2A5B1E91F947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F26FFC-71DC-4B43-9F29-2A5B1E91F947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F26FFC-71DC-4B43-9F29-2A5B1E91F947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F26FFC-71DC-4B43-9F29-2A5B1E91F947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA36B54-9AAD-474C-A5D1-2E1BB26E072D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA36B54-9AAD-474C-A5D1-2E1BB26E072D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA36B54-9AAD-474C-A5D1-2E1BB26E072D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA36B54-9AAD-474C-A5D1-2E1BB26E072D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D64A5E8-79C3-4264-9A24-D2E639CA49B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D64A5E8-79C3-4264-9A24-D2E639CA49B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D64A5E8-79C3-4264-9A24-D2E639CA49B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D64A5E8-79C3-4264-9A24-D2E639CA49B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60A3DCD6-131E-4C71-B6FA-EAC267CA5B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A3DCD6-131E-4C71-B6FA-EAC267CA5B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A3DCD6-131E-4C71-B6FA-EAC267CA5B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A3DCD6-131E-4C71-B6FA-EAC267CA5B85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

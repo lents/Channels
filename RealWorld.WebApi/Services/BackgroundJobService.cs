@@ -22,15 +22,13 @@ public class BackgroundJobService : BackgroundService
 
             try
             {
-                // Simulate some long-running, asynchronous work.
                 await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
                 _logger.LogInformation("Finished processing Job: {JobId}", job.Id);
             }
             catch (OperationCanceledException)
-            {
-                // The stopping token was triggered.
+            {                
                 _logger.LogWarning("Job processing was cancelled for JobId: {JobId}.", job.Id);
-                break; // Exit the loop.
+                break;
             }
             catch (Exception ex)
             {

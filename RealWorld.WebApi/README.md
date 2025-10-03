@@ -33,7 +33,8 @@ curl -X POST http://localhost:5000/api/jobs \
 -H "Content-Type: application/json" \
 -d '{"TaskName": "Process video file"}'
 ```
-
+Windows 
+curl -X POST https://localhost:5001/api/jobs -k -H "Content-Type: application/json" -d "{\"TaskName\": \"Process video file\"}"
 You should receive a response similar to this, with a unique `jobId`:
 
 ```json
